@@ -292,9 +292,8 @@ async def requestHandler(bot:Update, msg:Message):
                     ]
                 )
             )
-
-            replyText = f"<b>👋 Hello {mentionUser} !!\n\n Your Request has been added to queue. Your Request Will Be Uploaded soon. 📌 Note :- If You Didn't Follow The Request Format Your Request Will be Rejected. 📄 See Request Format by Sending #format  📌 Please Note that Admins might be busy. So, this may take more time. 🔖Join [@GDriveIt] to Get Updates \n\n 👇 See Your Request Status Here 👇</b>"
-
+            replyText = f"<b>👋 Hello {mentionUser} !!\n\n📍 Your Request for {contentRequested} has been submitted to the admins.\n\n🚀 Your Request Will Be Uploaded soon.\n\n 📌 Note :- If You Didn't Follow The Request Format Your Request Will be Rejected \n\n 📄 See Request Format by Sending #format \n\n📌 Please Note that Admins might be busy. So, this may take more time.\n\n 🔖Join [@GDriveIt] to Get Updates \n\n👇 See Your Request Status Here </b>"
+            
             # Sending message for user in group
             await msg.reply_text(
                 replyText,
