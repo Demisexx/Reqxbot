@@ -293,7 +293,7 @@ async def requestHandler(bot:Update, msg:Message):
                 )
             )
 
-            replyText = f"<b>👋 Hello {mentionUser} !!\n\n Your Request has been added to queue.\n\n 👇 See Your Request Status Here 👇</b>"
+            replyText = f"<b>👋 Hello {mentionUser} !!\n\n Your Request has been added to queue. Your Request Will Be Uploaded soon. 📌 Note :- If You Didn't Follow The Request Format Your Request Will be Rejected. 📄 See Request Format by Sending #format  📌 Please Note that Admins might be busy. So, this may take more time. 🔖Join [@GDriveIt] to Get Updates \n\n 👇 See Your Request Status Here 👇</b>"
 
             # Sending message for user in group
             await msg.reply_text(
@@ -391,7 +391,7 @@ async def callBackButton(bot:Update, callback_query:CallbackQuery):
                         )
 
                         # Result of request sent to group
-                        replyText = f"<b>Dear {mentionUser}🧑\nYour request for {groupResult}\n<b>(Team SiC)</b></b>"
+                        replyText = f"<b>Dear {mentionUser}🧑\nYour request for {groupResult}\n<b>[@GDriveIt]</b></b>"
                         await bot.send_message(
                             int(groupID),
                             replyText,
