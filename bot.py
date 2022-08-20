@@ -59,7 +59,7 @@ requestRegex = "#[rR][eE][qQ][uU][eE][sS][tT] "
 async def startHandler(bot:Update, msg:Message):
     botInfo = await bot.get_me()
     await msg.reply_text(
-        "<b>Hi,this is SiC Request Bot 🤖.\n\nThe requests can be registered by typing ( #request ) .\nMovies & shows & anime will be uploaded in UPLOADS CHANNEL only.\nRest of the things will be handled by Admins itself to access All Links Join Google Group.</b>",
+        "<b>Hey There,this is [@GDriveIt] Request Bot 🤖.\n\nThe requests can be registered by typing ( #request ) .\nMovies & shows & anime will be uploaded in UPLOADS CHANNEL only.\nRest of the things will be handled by Admins itself to access All Links Join Google Group.</b>",
         parse_mode = "html",
         reply_markup = InlineKeyboardMarkup(
             [
