@@ -59,14 +59,14 @@ requestRegex = "#[rR][eE][qQ][uU][eE][sS][tT] "
 async def startHandler(bot:Update, msg:Message):
     botInfo = await bot.get_me()
     await msg.reply_text(
-        "<b>Hi,this is SiC Request Bot 🤖.\n\nThe requests can be registered by typing ( #request ) in Dump group.\nMovies will be uploaded in UPLOADS CHANNEL only.\nRest of the things will be handled by Admins itself.\n\nMaintainer: Chaitanya Gupta (Team SiC)</b>",
+        "<b>Hi,this is SiC Request Bot 🤖.\n\nThe requests can be registered by typing ( #request ) .\nMovies & shows & anime will be uploaded in UPLOADS CHANNEL only.\nRest of the things will be handled by Admins itself to access All Links Join Google Group.</b>",
         parse_mode = "html",
         reply_markup = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
                         "📤UPLOADS CHANNEL📤",
-                        url = f"https://t.me/+B_q7PnIdPJk5ZmY1"
+                        url = f"https://t.me/GDriveIt"
                     )
                     
                 ]
@@ -401,7 +401,7 @@ async def callBackButton(bot:Update, callback_query:CallbackQuery):
                                     [
                                         InlineKeyboardButton(
                                             "📤UPLOAD CHANNEL📤",
-                                            url = f"https://t.me/+B_q7PnIdPJk5ZmY1"
+                                            url = f"https://t.me/GDriveIt"
                                         )
                                     ]
                                 ]
