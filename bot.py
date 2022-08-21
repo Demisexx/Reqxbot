@@ -59,7 +59,7 @@ requestRegex = "#[rR][eE][qQ][uU][eE][sS][tT] "
 async def startHandler(bot:Update, msg:Message):
     botInfo = await bot.get_me()
     await msg.reply_text(
-        "<b>Hey There,this is [@GDriveIt] Request Bot 🤖.\n\nThe requests can be registered by typing ( #request ) .\nMovies & shows & anime will be uploaded in UPLOADS CHANNEL only.\nRest of the things will be handled by Admins itself to access All Links Join Google Group.</b>",
+        "<b>Hey There,this is [@GDriveIt] Request Bot 🤖.\n\nThe requests can be registered by typing ( #request ) .\n\nMovies & shows & anime will be uploaded in UPLOADS CHANNEL only.\n\nRest of the things will be handled by Admins itself to access All Links Join Our Google Group.</b>",
         parse_mode = "html",
         reply_markup = InlineKeyboardMarkup(
             [
@@ -390,7 +390,7 @@ async def callBackButton(bot:Update, callback_query:CallbackQuery):
                         )
 
                         # Result of request sent to group
-                        replyText = f"<b>Dear {mentionUser}🧑\nYour request for {groupResult}\n<b>[@GDriveIt]</b></b>"
+                        replyText = f"<b>Dear {mentionUser}🧑\nYour request for {contentRequested} has Been {groupresult} \n\n<b> ☣️ Follow For More - @GDriveIt </b></b>"
                         await bot.send_message(
                             int(groupID),
                             replyText,
